@@ -1,26 +1,17 @@
 # StatBook
 
-A lightweight Fabric client mod for Minecraft 1.20.1 that opens a compact GUI with two tabs:
-- Mobs
-- Blocks
+Client-side Fabric mod for Minecraft 1.20.1.
 
-The mod stores simple local statistics and lets you browse them with search and sorting by count.
+## Current functionality
+- Press `'` (apostrophe) to open the book; the key can be changed in Minecraft controls.
+- Automatically counts blocks broken by the local player through Fabric's client block-break event.
+- Detects kills of living entities where the local player was the attacker and records the final held weapon.
+- Stores data in `.minecraft/config/statbook.json`, so it persists across restarts.
+- Search field and descending count sorting in both tabs.
+- Tab buttons, with the active tab visibly disabled.
 
-## Features
-- Press `B` to open the book
-- Search by name
-- Show a list of mobs and blocks with counts
-- Favorite weapon / favorite tool tracking
-- Commands for testing and data entry:
-  - `/statbook addkill Skeleton Diamond_Sword`
-  - `/statbook addblock Obsidian Netherite_Pickaxe`
-  - `/statbook clear`
+Build with JDK 17:
+- Windows: `gradlew.bat build`
+- Linux/macOS: `./gradlew build`
 
-## Run
-1. Install JDK 17
-2. Open the project in your terminal
-3. Run:
-   - Windows: `gradlew.bat runClient`
-   - Linux/macOS: `./gradlew runClient`
-
-If you want, I can also retarget this project to another Fabric/Minecraft version (for example 1.21.x or 1.20.4) and add deeper automatic stat tracking by event hooks.
+The mod targets Minecraft 1.20.1 because the repository's current Gradle properties use that version. Minecraft `26.2` is not a released Fabric version in this project; retargeting requires the exact Minecraft release and matching Yarn/Fabric Loader/API coordinates.
