@@ -3,14 +3,20 @@
   "id": "statbook",
   "version": "${version}",
   "name": "StatBook",
-  "description": "A client-side adventure statistics book.",
-  "authors": ["lukatorlopov-cloud"],
+  "description": "A client-side adventure statistics book for Minecraft 26.2.",
+  "authors": [
+    "lukatorlopov-cloud"
+  ],
   "license": "MIT",
   "environment": "client",
-  "entrypoints": { "client": ["net.lukatorlopov.statbook.StatBookClient"] },
+  "entrypoints": {
+    "client": [
+      "net.lukatorlopov.statbook.StatBookClient"
+    ]
+  },
   "depends": {
-    "fabricloader": ">=0.15.0",
-    "minecraft": "~1.20.1",
+    "fabricloader": ">=0.19.5",
+    "minecraft": "=26.2",
     "fabric-api": "*"
   }
 }
