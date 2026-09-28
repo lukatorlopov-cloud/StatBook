@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "statbook",
+  "version": "${version}",
+  "name": "StatBook",
+  "description": "A lightweight client-side adventure statistics book for tracking mob kills and mined blocks.",
+  "authors": [
+    "lukatorlopov-cloud"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.lukatorlopov.statbook.StatBook"
+    ],
+    "client": [
+      "net.lukatorlopov.statbook.StatBookClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "fabric-api": "*"
+  }
+}

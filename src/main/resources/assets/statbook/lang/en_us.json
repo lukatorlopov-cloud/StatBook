@@ -1,0 +1,13 @@
+{
+  "category": "statbook",
+  "entries": {
+    "key.category.statbook": "StatBook",
+    "key.statbook.open": "Open StatBook",
+    "statbook.screen.title": "StatBook",
+    "statbook.tabs.mobs": "Mobs",
+    "statbook.tabs.blocks": "Blocks",
+    "statbook.search": "Search...",
+    "statbook.stats.header.mobs": "Mob kills",
+    "statbook.stats.header.blocks": "Mining stats"
+  }
+}
